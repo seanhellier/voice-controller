@@ -63,6 +63,7 @@ export const NewsCards = ({ articles }) => {
 								<Typography variant="h6" component="h6">
 									Try saying: <br /> <i>{infoCard.text}</i>
 								</Typography>
+								) : null;
 							</div>
 						</Grid>
 					))}
