@@ -17,13 +17,15 @@ const App = () => {
 	useEffect(() => {
 		alanBtn({
 			key: alanKey,
-			onCommand: ({ command, articles }) => {
-				console.log("in onCommand");
+			onCommand: ({ command, articles, number }) => {
 				if (command === "newHeadlines") {
 					setNewsArticles(articles);
 					setActiveArticle(-1);
 				} else if (command === "highlight") {
 					setActiveArticle((prevActiveArticle) => prevActiveArticle + 1);
+				} else if (command === "open") {
+					console.log(number);
+					window.open(articles[number].url, "_blank");
 				}
 			},
 		});
