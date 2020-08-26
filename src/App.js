@@ -18,6 +18,7 @@ const App = () => {
 		alanBtn({
 			key: alanKey,
 			onCommand: ({ command, articles, number }) => {
+				console.log("in onCommand");
 				if (command === "newHeadlines") {
 					setNewsArticles(articles);
 					setActiveArticle(-1);
