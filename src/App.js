@@ -1,4 +1,4 @@
-import React, { useState, useEffect, createRef } from "react";
+import React, { useState, useEffect } from "react";
 import alanBtn from "@alan-ai/alan-sdk-web";
 import NewsCards from "./components/newsCards/newsCards";
 import useStyles from "./styles.js";
