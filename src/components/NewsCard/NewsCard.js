@@ -20,21 +20,25 @@ const NewsCard = ({
 }) => {
 	const classes = useStyles();
 	const [elRefs, setElRefs] = useState([]);
-	const scrollToRef = (ref) => window.scroll(0, ref.current.offsetTop - 50)
+	const scrollToRef = (ref) => window.scroll(0, ref.current.offsetTop - 50);
 
 	useEffect(() => {
-		setElRefs((refs) => Array(20).fill().map(_ , j) => refs[j] || createRef()));
+		setElRefs((refs) =>
+			Array(20)
+				.fill()
+				.map((_, j) => refs[j] || createRef())
+		);
 	}, []);
 
 	useEffect(() => {
-		if(i === activeArticle && elRefs[activeArticle]) {
+		if (i === activeArticle && elRefs[activeArticle]) {
 			scrollToRef(elRefs[activeArticle]);
 		}
-	}, [ i, activeArticle, elRefs]
-	)
+	}, [i, activeArticle, elRefs]);
 
 	return (
-		<Card ref={elRefs[i]}
+		<Card
+			ref={elRefs[i]}
 			className={classNames(
 				classes.card,
 				activeArticle === i ? classes.activeCard : null
