@@ -3,6 +3,7 @@ import alanBtn from "@alan-ai/alan-sdk-web";
 import NewsCards from "./components/newsCards/newsCards";
 import useStyles from "./styles.js";
 import wordsToNumbers from "words-to-numbers";
+import { Typography } from "@material-ui/core";
 
 const alanKey =
 	"47a7b11eeb3cc7622ced78a9dcf06b5b2e956eca572e1d8b807a3e2338fdd0dc/stage";
@@ -45,10 +46,48 @@ const App = () => {
 		});
 	}, []);
 
+	// return (
+
+	// 	<div>
+	// 		<h1>Voice Controller</h1>
+	// 		<NewsCards articles={newsArticles} activeArticle={activeArticle} />
+	// 	</div>
+	// );
+
 	return (
 		<div>
 			<h1>Voice Controller</h1>
 			<NewsCards articles={newsArticles} activeArticle={activeArticle} />
+
+			{!newsArticles.length ? (
+				<div className={classes.footer}>
+					<Typography variant="body1" component="h2">
+						Created by
+						<a
+							className={classes.link}
+							href="https://www.linkedin.com/in/adrian-hajdin/"
+						>
+							{" "}
+							Sean Leif Hellier August, 2020
+						</a>{" "}
+						-
+						<a
+							className={classes.link}
+							href="https://www.linkedin.com/in/seanleifhellier/"
+						>
+							{" "}
+							LinkedIn
+						</a>
+						<a
+							className={classes.link}
+							href="https://github.com/seanhellier/voice-controller"
+						>
+							{" "}
+							Github
+						</a>
+					</Typography>
+				</div>
+			) : null}
 		</div>
 	);
 };
