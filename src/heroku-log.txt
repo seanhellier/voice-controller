@@ -1,0 +1,73 @@
+SeanHelliersMBP:voice-controller columbia$ heroku logs -n 1500
+ ›   Warning: heroku update available from 7.41.1 to 7.42.13.
+2020-08-28T00:13:11.751259+00:00 app[api]: Initial release by user sean@newtropolis.com
+2020-08-28T00:13:11.751259+00:00 app[api]: Release v1 created by user sean@newtropolis.com
+2020-08-28T00:13:11.861237+00:00 app[api]: Enable Logplex by user sean@newtropolis.com
+2020-08-28T00:13:11.861237+00:00 app[api]: Release v2 created by user sean@newtropolis.com
+2020-08-28T00:19:09.000000+00:00 app[api]: Build started by user sean@newtropolis.com
+2020-08-28T00:19:11.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/8cb1b90d-bd0c-4808-9f7b-0665c4a6a606/activity/builds/1cb96672-605a-493f-ad76-0f7fa23225af
+2020-08-28T00:20:46.000000+00:00 app[api]: Build started by user sean@newtropolis.com
+2020-08-28T00:20:48.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/8cb1b90d-bd0c-4808-9f7b-0665c4a6a606/activity/builds/41471e83-1373-4ae3-9655-b09324ba9ec5
+2020-08-28T00:22:17.018116+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/" host=slh-voice-controller.herokuapp.com request_id=7eaf0d31-46d8-4f2b-b4c9-ff3e4cc049e9 fwd="67.86.132.180" dyno= connect= service= status=502 bytes= protocol=https
+2020-08-28T00:22:17.441402+00:00 heroku[router]: at=info code=H81 desc="Blank app" method=GET path="/favicon.ico" host=slh-voice-controller.herokuapp.com request_id=a39c728a-6918-4e80-beee-ed7b940bb7fa fwd="67.86.132.180" dyno= connect= service= status=502 bytes= protocol=https
+2020-08-28T00:25:01.467058+00:00 app[api]: Attach MONGODB (@ref:mongolab-vertical-01569) by user sean@newtropolis.com
+2020-08-28T00:25:01.467058+00:00 app[api]: Running release v3 commands by user sean@newtropolis.com
+2020-08-28T00:25:01.477457+00:00 app[api]: @ref:mongolab-vertical-01569 completed provisioning, setting MONGODB_URI. by user sean@newtropolis.com
+2020-08-28T00:25:01.477457+00:00 app[api]: Release v4 created by user sean@newtropolis.com
+2020-08-28T00:25:16.000000+00:00 app[api]: Build started by user sean@newtropolis.com
+2020-08-28T00:25:18.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/8cb1b90d-bd0c-4808-9f7b-0665c4a6a606/activity/builds/4b8d5f51-7c9d-4036-8e80-97d719da6232
+2020-08-28T00:26:54.667966+00:00 app[api]: Detach MONGODB (@ref:mongolab-vertical-01569) by user sean@newtropolis.com
+2020-08-28T00:26:54.667966+00:00 app[api]: Release v5 created by user sean@newtropolis.com
+2020-08-28T00:27:51.974047+00:00 app[api]: Release v6 created by user ormongo@addons.heroku.com
+2020-08-28T00:27:51.974047+00:00 app[api]: @ref:ormongo-flat-08603 completed provisioning, setting ORMONGO_REGION, ORMONGO_RS_URL, ORMONGO_URL. by user ormongo@addons.heroku.com
+2020-08-28T00:28:02.000000+00:00 app[api]: Build started by user sean@newtropolis.com
+2020-08-28T00:28:04.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/8cb1b90d-bd0c-4808-9f7b-0665c4a6a606/activity/builds/02d89424-5509-4006-9d51-9386970abfd0
+2020-08-28T00:59:00.000000+00:00 app[api]: Build started by user sean@newtropolis.com
+2020-08-28T00:59:02.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/8cb1b90d-bd0c-4808-9f7b-0665c4a6a606/activity/builds/df793c72-15a8-4093-aa1a-e87be7a60804
+2020-08-28T01:03:50.000000+00:00 app[api]: Build started by user sean@newtropolis.com
+2020-08-28T01:03:52.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/8cb1b90d-bd0c-4808-9f7b-0665c4a6a606/activity/builds/784721d6-967e-4832-9127-c4023567612e
+2020-08-28T01:05:22.000000+00:00 app[api]: Build started by user sean@newtropolis.com
+2020-08-28T01:05:24.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/8cb1b90d-bd0c-4808-9f7b-0665c4a6a606/activity/builds/80557d21-83b2-4e16-91ff-c898a0479d03
+2020-08-28T01:08:13.000000+00:00 app[api]: Build started by user sean@newtropolis.com
+2020-08-28T01:08:15.000000+00:00 app[api]: Build failed -- check your build output: https://dashboard.heroku.com/apps/8cb1b90d-bd0c-4808-9f7b-0665c4a6a606/activity/builds/2d1fca2f-7e76-4bbd-b6dd-6ce2747bdcb8
+2020-08-28T01:12:45.000000+00:00 app[api]: Build started by user sean@newtropolis.com
+2020-08-28T01:14:50.344075+00:00 app[api]: Deploy 7c7189de by user sean@newtropolis.com
+2020-08-28T01:14:50.344075+00:00 app[api]: Release v7 created by user sean@newtropolis.com
+2020-08-28T01:14:50.363365+00:00 app[api]: Scaled to web@1:Free by user sean@newtropolis.com
+2020-08-28T01:14:58.000000+00:00 app[api]: Build succeeded
+2020-08-28T01:15:03.591343+00:00 heroku[web.1]: Starting process with command `npm start`
+2020-08-28T01:15:07.865930+00:00 app[web.1]: 
+2020-08-28T01:15:07.865940+00:00 app[web.1]: > voice-controller@0.1.0 start /app
+2020-08-28T01:15:07.865941+00:00 app[web.1]: > react-scripts start
+2020-08-28T01:15:07.865941+00:00 app[web.1]: 
+2020-08-28T01:15:11.958927+00:00 app[web.1]: ℹ ｢wds｣: Project is running at http://172.18.10.234/
+2020-08-28T01:15:11.959594+00:00 app[web.1]: ℹ ｢wds｣: webpack output is served from
+2020-08-28T01:15:11.959735+00:00 app[web.1]: ℹ ｢wds｣: Content not from webpack is served from /app/public
+2020-08-28T01:15:11.959880+00:00 app[web.1]: ℹ ｢wds｣: 404s will fallback to /
+2020-08-28T01:15:11.960212+00:00 app[web.1]: Starting the development server...
+2020-08-28T01:15:11.960213+00:00 app[web.1]: 
+2020-08-28T01:15:12.132661+00:00 heroku[web.1]: Process exited with status 0
+2020-08-28T01:15:12.387508+00:00 heroku[web.1]: State changed from starting to crashed
+2020-08-28T01:15:12.390166+00:00 heroku[web.1]: State changed from crashed to starting
+2020-08-28T01:15:22.223757+00:00 heroku[web.1]: Starting process with command `npm start`
+2020-08-28T01:15:24.294122+00:00 app[web.1]: 
+2020-08-28T01:15:24.294140+00:00 app[web.1]: > voice-controller@0.1.0 start /app
+2020-08-28T01:15:24.294143+00:00 app[web.1]: > react-scripts start
+2020-08-28T01:15:24.294144+00:00 app[web.1]: 
+2020-08-28T01:15:26.638859+00:00 app[web.1]: ℹ ｢wds｣: Project is running at http://172.16.29.170/
+2020-08-28T01:15:26.639271+00:00 app[web.1]: ℹ ｢wds｣: webpack output is served from
+2020-08-28T01:15:26.639374+00:00 app[web.1]: ℹ ｢wds｣: Content not from webpack is served from /app/public
+2020-08-28T01:15:26.639469+00:00 app[web.1]: ℹ ｢wds｣: 404s will fallback to /
+2020-08-28T01:15:26.639663+00:00 app[web.1]: Starting the development server...
+2020-08-28T01:15:26.639664+00:00 app[web.1]: 
+2020-08-28T01:15:26.709314+00:00 heroku[web.1]: Process exited with status 0
+2020-08-28T01:15:26.744967+00:00 heroku[web.1]: State changed from starting to crashed
+2020-08-28T01:24:10.710431+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=slh-voice-controller.herokuapp.com request_id=5d246c7e-cc44-4254-b19a-3db508fd9341 fwd="67.86.132.180" dyno= connect= service= status=503 bytes= protocol=https
+2020-08-28T01:24:11.814564+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=slh-voice-controller.herokuapp.com request_id=114a695c-cb1b-4f49-aff0-dd5852422905 fwd="67.86.132.180" dyno= connect= service= status=503 bytes= protocol=https
+2020-08-28T01:24:21.240238+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=slh-voice-controller.herokuapp.com request_id=805fb315-e264-4746-a9bb-82a783348101 fwd="67.86.132.180" dyno= connect= service= status=503 bytes= protocol=https
+2020-08-28T01:24:22.234755+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=slh-voice-controller.herokuapp.com request_id=c22574fe-8fad-4cd5-9812-6e16bf45bebc fwd="67.86.132.180" dyno= connect= service= status=503 bytes= protocol=https
+2020-08-28T01:25:47.811908+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=slh-voice-controller.herokuapp.com request_id=bcdb30f2-4d53-4f31-80f2-246a1feee0a8 fwd="67.86.132.180" dyno= connect= service= status=503 bytes= protocol=https
+2020-08-28T01:25:48.413409+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=slh-voice-controller.herokuapp.com request_id=316995a1-c6ed-4ba1-9970-23679728d21a fwd="67.86.132.180" dyno= connect= service= status=503 bytes= protocol=https
+2020-08-28T01:29:56.496547+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=slh-voice-controller.herokuapp.com request_id=24ee2575-cf6c-4ab2-94fb-1bfd543991a1 fwd="67.86.132.180" dyno= connect= service= status=503 bytes= protocol=https
+2020-08-28T01:29:57.224920+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=slh-voice-controller.herokuapp.com request_id=773f9224-602d-463c-9b76-3ad5a86eae19 fwd="67.86.132.180" dyno= connect= service= status=503 bytes= protocol=https
+SeanHelliersMBP:voice-controller columbia$ 
